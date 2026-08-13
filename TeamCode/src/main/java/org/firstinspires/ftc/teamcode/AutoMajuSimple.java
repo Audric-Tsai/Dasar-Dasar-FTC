@@ -21,7 +21,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
  *   Bedanya cuma satu: presisi.
  *
  *   Metode 1 gampang tapi nggak bisa diandalkan.
- *   Metode 5 sedikit lebih ribet tapi hasilnya konsisten.
+ *   Metode 5 sedikit lebih ribet tapi hasilnya lebih konsisten.
  *
  *   Jangan langsung lompat ke metode 5. Coba dari nomor 1,
  *   ukur pakai meteran, dan rasakan sendiri masalahnya.
@@ -207,7 +207,6 @@ public class AutoMajuSimple extends LinearOpMode {
         // ====================================================================
 
         telemetry.addLine("SELESAI");
-        telemetry.addLine("Sekarang ukur jaraknya pakai meteran!");
         telemetry.update();
         sleep(5000);
     }
@@ -224,7 +223,7 @@ public class AutoMajuSimple extends LinearOpMode {
      *   ya jalan sekian meter.
      *
      * KENAPA SEBENARNYA BERMASALAH:
-     *   setPower(0.3) itu BUKAN perintah kecepatan. Itu perintah
+     *   setPower(0.3). Itu perintah
      *   "kasih 30% dari tegangan baterai ke motor".
      *
      *   Baterai penuh (13.5V) -> motor dapat 4.05V -> jalan cepat
@@ -345,7 +344,7 @@ public class AutoMajuSimple extends LinearOpMode {
      * memutuskan kapan berhenti, bukan SDK.
      *
      * KENAPA PERLU BELAJAR INI:
-     *   RUN_TO_POSITION itu kotak hitam. Enak dipakai, tapi kamu
+     *   RUN_TO_POSITION ke kotak hitam. Enak dipakai, tapi kamu
      *   nggak bisa mengubah apa pun di dalamnya.
      *
      *   Begitu kamu mau menambahkan sesuatu — misalnya "berhenti
@@ -560,17 +559,17 @@ public class AutoMajuSimple extends LinearOpMode {
     // Menulis sekali di sini jauh lebih baik daripada copy-paste
     // rumus yang sama di lima tempat berbeda.
 
-    /** Keliling roda dalam cm. Satu putaran roda = sejauh ini. */
+    /** Keliling roda dalam INCI. Satu putaran roda = sejauh ini. */
     private double kelilingRoda() {
         return Math.PI * DIAMETER_RODA_INCI;
     }
 
-    /** Ubah jarak (cm) menjadi jumlah tick encoder. */
+    /** Ubah jarak (INCI) menjadi jumlah tick encoder. */
     private int inciKeTick(double inci) {
         return (int) ((inci / kelilingRoda()) * TICK_PER_PUTARAN);
     }
 
-    /** Ubah tick encoder menjadi jarak (cm). Kebalikan dari cmKeTick. */
+    /** Ubah tick encoder menjadi jarak (INCI). Kebalikan dari InciKeTick. */
     private double tickKeInci(int tick) {
         return (tick / TICK_PER_PUTARAN) * kelilingRoda();
     }
@@ -633,7 +632,7 @@ public class AutoMajuSimple extends LinearOpMode {
  *    d. Mana yang lebih tepat?
  *
  *  PERCOBAAN 6 — Lihat robot melenceng
- *    a. Jalankan metode 3 sejauh 200 cm
+ *    a. Jalankan metode 3 sejauh 50 inci
  *    b. Ukur berapa cm robot melenceng ke samping
  *    c. Jalankan metode 5, ukur lagi
  *

@@ -81,38 +81,6 @@ Kamu cuma perlu ngoprek isi folder `teamcode/`. Sisanya biarkan apa adanya.
 
 ---
 
-## Materi
-
-Materi disusun berurutan. Kerjakan dari nomor kecil ke besar — tiap file membangun konsep dari file sebelumnya.
-
-| No | Topik | Isi |
-|---|---|---|
-| 01 | TeleOp Dasar | Struktur OpMode, telemetry, baca gamepad |
-| 02 | Menggerakkan Motor | hardwareMap, arah motor, arcade drive |
-| 03 | Encoder | Baca posisi, RUN_USING_ENCODER, kontrol kecepatan |
-| 04 | Autonomous Dasar | Gerak berdasarkan waktu dan jarak |
-| 05 | IMU | Belok akurat pakai sensor gyro bawaan Control Hub |
-| 06 | State Machine | Menyusun autonomous yang rapi dan gampang di-debug |
-
-*(Daftar ini akan terus bertambah.)*
-
----
-
-## Catatan Konfigurasi Robot
-
-Nama device di Driver Hub harus **persis sama** dengan yang ada di kode. Huruf besar-kecil berpengaruh.
-
-Konfigurasi yang dipakai di materi ini:
-
-```
-left_drive      → Motor Port 0 (Control Hub)
-right_drive     → Motor Port 1 (Control Hub)
-```
-
-Kalau nama di konfigurasi robot kamu beda, ubah salah satunya supaya cocok.
-
----
-
 ## Lisensi
 
 Kode SDK di dalam `FtcRobotController/` mengikuti lisensi BSD 3-Clause dari FIRST. Materi pembelajaran di dalam `TeamCode/` bebas dipakai dan dibagikan untuk keperluan belajar dan mengajar.

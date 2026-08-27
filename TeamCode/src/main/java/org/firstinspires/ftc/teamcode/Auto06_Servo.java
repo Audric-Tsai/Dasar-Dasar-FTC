@@ -45,7 +45,7 @@ import com.qualcomm.robotcore.hardware.Servo;
  */
 
 @Autonomous(name = "Auto Servo (Belajar)", group = "Belajar")
-public class Auto05_Servo extends LinearOpMode {
+public class Auto06_Servo extends LinearOpMode {
 
     // ========================================================================
     //   BAGIAN 1 — ANGKA-ANGKA PENTING

@@ -50,7 +50,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
  */
 
 @Autonomous(name = "Auto Odometri (Belajar)", group = "Belajar")
-public class Auto06_Odometri extends LinearOpMode {
+public class Auto07_Odometri extends LinearOpMode {
 
     // ========================================================================
     //   BAGIAN 1 — ANGKA-ANGKA PENTING

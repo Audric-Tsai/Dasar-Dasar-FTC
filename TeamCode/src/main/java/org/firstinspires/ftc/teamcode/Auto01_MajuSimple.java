@@ -37,7 +37,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
  */
 
 @Autonomous(name = "Auto Maju (Belajar)", group = "Belajar")
-public class AutoMajuSimple extends LinearOpMode {
+public class Auto01_MajuSimple extends LinearOpMode {
 
     // ========================================================================
     //   BAGIAN 1 — ANGKA-ANGKA PENTING

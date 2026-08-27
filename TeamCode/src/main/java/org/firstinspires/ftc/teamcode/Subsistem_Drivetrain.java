@@ -26,7 +26,7 @@ import com.qualcomm.robotcore.util.Range;
  *   akan muncul di daftar itu), yang memang itu yang kita mau.
  * ============================================================================
  */
-public class Drivetrain {
+public class Subsistem_Drivetrain {
 
     private static final double TICK_PER_PUTARAN   = 560.0;
     private static final double DIAMETER_RODA_INCI = 3.54;
@@ -44,7 +44,7 @@ public class Drivetrain {
      * setZeroPowerBehavior) yang dulu diulang-ulang di Bagian 3 tiap
      * file Auto0N sekarang cuma ditulis SEKALI, di SATU tempat.
      */
-    public Drivetrain(HardwareMap hardwareMap, LinearOpMode opMode) {
+    public Subsistem_Drivetrain(HardwareMap hardwareMap, LinearOpMode opMode) {
         this.opMode = opMode;
 
         motorKiri  = hardwareMap.get(DcMotor.class, "left_drive");
@@ -69,7 +69,7 @@ public class Drivetrain {
             double power = Range.clip(KECEPATAN * ((double) sisa / targetTick), POWER_MINIMUM, KECEPATAN);
             motorKiri.setPower(power);
             motorKanan.setPower(power);
-            opMode.telemetry.addData("Drivetrain.jalanLurus", "%.1f / %.1f inci",
+            opMode.telemetry.addData("Subsistem_Drivetrain.jalanLurus", "%.1f / %.1f inci",
                     tickKeInci(posisiRataRata()), jarakInci);
             opMode.telemetry.update();
         }

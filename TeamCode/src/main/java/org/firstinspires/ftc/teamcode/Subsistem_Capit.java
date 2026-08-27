@@ -9,21 +9,21 @@ import com.qualcomm.robotcore.hardware.Servo;
  * ============================================================================
  *
  *   Subsistem KEDUA, sengaja dibikin SEKECIL mungkin supaya polanya
- *   jelas: SATU class = SATU tanggung jawab. Drivetrain.java cuma
- *   urus gerak. Capit.java cuma urus buka-tutup. Nggak ada satu file
- *   pun yang urus DUA hal sekaligus — beda dengan Auto12, di mana
- *   SATU file OpMode raksasa urus motor, servo, sensor jarak, DAN
- *   sensor warna semua sekaligus.
+ *   jelas: SATU class = SATU tanggung jawab. Subsistem_Drivetrain.java
+ *   cuma urus gerak. Subsistem_Capit.java cuma urus buka-tutup. Nggak
+ *   ada satu file pun yang urus DUA hal sekaligus — beda dengan
+ *   Auto12, di mana SATU file OpMode raksasa urus motor, servo,
+ *   sensor jarak, DAN sensor warna semua sekaligus.
  * ============================================================================
  */
-public class Capit {
+public class Subsistem_Capit {
 
     private static final double POSISI_TUTUP = 0.0;
     private static final double POSISI_BUKA  = 1.0;
 
     private final Servo servo;
 
-    public Capit(HardwareMap hardwareMap) {
+    public Subsistem_Capit(HardwareMap hardwareMap) {
         servo = hardwareMap.get(Servo.class, "servo_lengan");
     }
 

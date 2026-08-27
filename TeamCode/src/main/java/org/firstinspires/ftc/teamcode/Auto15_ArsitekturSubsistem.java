@@ -22,21 +22,23 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
  *
  *   SOLUSINYA: SUBSISTEM (SUBSYSTEM). Pisahkan "cara menggerakkan
  *   drivetrain" dan "cara mengoperasikan capit" jadi CLASS TERSENDIRI
- *   (lihat Drivetrain.java dan Capit.java, satu folder dengan file
- *   ini) — ditulis SEKALI, dipakai ULANG oleh SEMUA OpMode yang butuh.
- *   Bug di satu tempat = perbaiki di satu tempat, otomatis kepakai
- *   di semua OpMode yang menggunakan class itu.
+ *   (lihat Subsistem_Drivetrain.java dan Subsistem_Capit.java, satu
+ *   folder dengan file ini) — ditulis SEKALI, dipakai ULANG oleh
+ *   SEMUA OpMode yang butuh. Bug di satu tempat = perbaiki di satu
+ *   tempat, otomatis kepakai di semua OpMode yang menggunakan class
+ *   itu.
  *
  *   BANDINGKAN FILE INI DENGAN Auto12_SubsistemMekanisme:
  *   Auto12 itu SATU file ~400 baris, semua logic motor+servo+sensor
  *   nyampur jadi satu. File INI mengerjakan tugas yang MIRIP (gerak,
- *   capit), tapi karena Drivetrain dan Capit sudah "dibungkus" jadi
- *   subsistem terpisah, runOpMode() di bawah jadi SANGAT PENDEK dan
- *   GAMPANG DIBACA — hampir kayak baca resep, bukan baca matematika.
+ *   capit), tapi karena Subsistem_Drivetrain dan Subsistem_Capit
+ *   sudah "dibungkus" jadi subsistem terpisah, runOpMode() di bawah
+ *   jadi SANGAT PENDEK dan GAMPANG DIBACA — hampir kayak baca resep,
+ *   bukan baca matematika.
  *
  *   ROBOT INI PAKAI:
- *     left_drive, right_drive -> lewat Drivetrain.java
- *     servo_lengan             -> lewat Capit.java
+ *     left_drive, right_drive -> lewat Subsistem_Drivetrain.java
+ *     servo_lengan             -> lewat Subsistem_Capit.java
  *
  *   LANJUT KE: Auto16_PilihRute — satu masalah praktis terakhir:
  *   pola "PILIH METODE DI SINI" yang dipakai di SEMUA file Auto0N
@@ -55,9 +57,9 @@ public class Auto15_ArsitekturSubsistem extends LinearOpMode {
         // Bandingkan Bagian 2+3 di file-file sebelumnya (belasan baris
         // hardwareMap.get()/setDirection()/setZeroPowerBehavior() per
         // subsistem) dengan DUA BARIS ini. Semua detail setup itu
-        // sekarang hidup di dalam konstruktor Drivetrain dan Capit.
-        Drivetrain drivetrain = new Drivetrain(hardwareMap, this);
-        Capit capit = new Capit(hardwareMap);
+        // sekarang hidup di dalam konstruktor Subsistem_Drivetrain dan Subsistem_Capit.
+        Subsistem_Drivetrain drivetrain = new Subsistem_Drivetrain(hardwareMap, this);
+        Subsistem_Capit capit = new Subsistem_Capit(hardwareMap);
 
         capit.tutup(); // posisi awal yang aman buat dibawa ke lapangan
 
@@ -90,19 +92,21 @@ public class Auto15_ArsitekturSubsistem extends LinearOpMode {
  * ============================================================================
  *
  *  PERCOBAAN 1 — Baca alurnya
- *    a. Baca runOpMode() di file ini SEBELUM baca Drivetrain.java
+ *    a. Baca runOpMode() di file ini SEBELUM baca
+ *       Subsistem_Drivetrain.java
  *    b. Bisa nebak apa yang dilakukan drivetrain.jalanLurus(24) tanpa
- *       buka Drivetrain.java sama sekali, cuma dari NAMANYA? Ini
- *       manfaat lain dari subsistem: nama method yang jelas bikin
- *       OpMode gampang dibaca TANPA harus tahu detail implementasi.
+ *       buka Subsistem_Drivetrain.java sama sekali, cuma dari
+ *       NAMANYA? Ini manfaat lain dari subsistem: nama method yang
+ *       jelas bikin OpMode gampang dibaca TANPA harus tahu detail
+ *       implementasi.
  *
  *  PERCOBAAN 2 — Sengaja bikin bug lalu perbaiki
- *    a. Di Drivetrain.java, ubah DIAMETER_RODA_INCI jadi angka yang
- *       salah (misal dikali 2)
- *    b. Perhatikan: HANYA file Drivetrain.java yang perlu diubah.
- *       Auto15 nggak perlu disentuh sama sekali, dan efeknya otomatis
- *       kepakai di SEMUA OpMode lain yang nanti kamu buat memakai
- *       class Drivetrain ini
+ *    a. Di Subsistem_Drivetrain.java, ubah DIAMETER_RODA_INCI jadi
+ *       angka yang salah (misal dikali 2)
+ *    b. Perhatikan: HANYA file Subsistem_Drivetrain.java yang perlu
+ *       diubah. Auto15 nggak perlu disentuh sama sekali, dan efeknya
+ *       otomatis kepakai di SEMUA OpMode lain yang nanti kamu buat
+ *       memakai class Subsistem_Drivetrain ini
  *    c. Kembalikan ke angka semula
  *
  *  PERCOBAAN 3 — Tambah subsistem baru
@@ -113,13 +117,14 @@ public class Auto15_ArsitekturSubsistem extends LinearOpMode {
  *       yang pertama, supaya berhenti berdasar sensor, bukan jarak tetap
  *
  *  TANTANGAN
- *    a. Upgrade Drivetrain.jalanLurus() dan tambah Drivetrain.belokPID()
- *       supaya pakai IMU + PID penuh (dari Auto04/05), bukan versi
- *       sederhana di atas. Drivetrain butuh nyimpan referensi IMU juga
- *       di konstruktornya.
- *    b. Setelah itu, SEMUA OpMode yang pakai class Drivetrain otomatis
- *       jadi lebih presisi tanpa perlu diubah satu-satu — itulah inti
- *       kenapa arsitektur ini berharga di robot yang kodenya makin lama
- *       makin besar.
+ *    a. Upgrade Subsistem_Drivetrain.jalanLurus() dan tambah
+ *       Subsistem_Drivetrain.belokPID() supaya pakai IMU + PID penuh
+ *       (dari Auto04/05), bukan versi sederhana di atas.
+ *       Subsistem_Drivetrain butuh nyimpan referensi IMU juga di
+ *       konstruktornya.
+ *    b. Setelah itu, SEMUA OpMode yang pakai class Subsistem_Drivetrain
+ *       otomatis jadi lebih presisi tanpa perlu diubah satu-satu —
+ *       itulah inti kenapa arsitektur ini berharga di robot yang
+ *       kodenya makin lama makin besar.
  * ============================================================================
  */

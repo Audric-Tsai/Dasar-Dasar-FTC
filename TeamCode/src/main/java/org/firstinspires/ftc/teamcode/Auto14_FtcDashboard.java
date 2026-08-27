@@ -50,6 +50,11 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
  *   ROBOT INI PAKAI:
  *     left_drive, right_drive, imu -> sama Auto01-05
  *
+ *   LANJUT KE: Auto15_ArsitekturSubsistem — tuning sekarang cepat,
+ *   tapi KODE-nya sendiri (semua 14 file sejauh ini) masih punya
+ *   masalah struktural: fungsi yang sama ditulis ulang di tiap file.
+ *   Auto15 membenahi itu.
+ *
  * ============================================================================
  */
 

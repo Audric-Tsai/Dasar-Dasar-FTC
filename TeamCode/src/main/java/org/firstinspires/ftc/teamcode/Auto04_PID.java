@@ -38,6 +38,10 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
  *   ROBOT INI PAKAI:
  *     left_drive, right_drive, imu -> sama seperti Auto01/02/03
  *
+ *   LANJUT KE: Auto05_GabunganPID — TANTANGAN di akhir file ini
+ *   minta kamu menulis jalanLurusPID(). Auto05 itu jawabannya:
+ *   Auto03 dibangun ulang pakai PID penuh dari file ini.
+ *
  * ============================================================================
  */
 

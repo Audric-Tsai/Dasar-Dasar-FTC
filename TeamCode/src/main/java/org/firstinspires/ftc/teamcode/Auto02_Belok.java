@@ -35,6 +35,10 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
  *     right_drive  -> sama seperti Auto01
  *     imu          -> sama seperti Auto01
  *
+ *   LANJUT KE: Auto03_Gabungan — sekarang kamu punya "jalan lurus"
+ *   (Auto01) DAN "muter" (file ini), keduanya bisa digabung jadi
+ *   satu autonomous beneran yang menyusuri lebih dari satu sisi.
+ *
  * ============================================================================
  */
 

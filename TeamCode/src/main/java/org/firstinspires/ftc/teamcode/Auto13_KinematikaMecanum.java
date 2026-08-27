@@ -58,6 +58,11 @@ import com.qualcomm.robotcore.util.ElapsedTime;
  *     depan_kiri, depan_kanan, belakang_kiri, belakang_kanan
  *     -> 4 motor mecanum
  *
+ *   LANJUT KE: Auto14_FtcDashboard — nggak bergantung ke drivetrain
+ *   mecanum atau tank, jadi aman lanjut ke situ walau kamu lewati
+ *   file ini. Auto14 soal TOOLING (tuning & grafik), bukan
+ *   drivetrain.
+ *
  * ============================================================================
  */
 

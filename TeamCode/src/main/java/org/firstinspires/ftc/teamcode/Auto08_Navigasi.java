@@ -114,6 +114,10 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
  *   putarannya meleset dikit, dan lihat sendiri kenapa dia bisa
  *   nggak tepat sampai ke titik yang dimaksud.
  *
+ *   LANJUT KE: Auto09_MesinKeadaan — semua gerakan dari Auto01
+ *   sampai file ini masih BLOCKING (satu while-loop tunggu sampai
+ *   selesai, baru lanjut). Auto09 mulai membongkar batasan itu.
+ *
  * ============================================================================
  */
 

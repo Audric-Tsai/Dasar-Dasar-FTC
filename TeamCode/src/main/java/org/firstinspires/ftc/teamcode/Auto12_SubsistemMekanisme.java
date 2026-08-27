@@ -18,9 +18,11 @@ import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
  *   AUTO SUBSISTEM MEKANISME — Semua Pelajaran, Satu Robot
  * ============================================================================
  *
- *   File terakhir di seri Auto0N ini nggak punya konsep baru. Ini
- *   "ambil-dan-taruh" (pick and place) sungguhan, dibangun dari
- *   potongan-potongan yang SUDAH kamu pelajari:
+ *   Ini penutup ARC PERTAMA seri Auto0N — "apa saja yang bisa
+ *   dilakukan robot ini secara fisik" (Auto01-11). File ini nggak
+ *   punya konsep baru. Ini "ambil-dan-taruh" (pick and place)
+ *   sungguhan, dibangun dari potongan-potongan yang SUDAH kamu
+ *   pelajari:
  *
  *     Auto01 -> gerak drivetrain dasar, dan kenapa "nebak pakai waktu"
  *               nggak bisa diandalkan (metode 1 di bawah nunjukkin
@@ -49,6 +51,11 @@ import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
  *     servo_lengan             -> capit (servo posisi)
  *     sensor_jarak             -> deteksi objek di depan
  *     sensor_warna             -> verifikasi warna objek yang dipegang
+ *
+ *   LANJUT KE: Auto13_KinematikaMecanum — ARC KEDUA seri ini dimulai
+ *   di sana. Auto13-16 nggak nambah kemampuan robot yang baru;
+ *   mereka membenahi CARA kamu menulis, tuning, dan mengatur kode
+ *   robot yang sudah bisa "melakukan segalanya" seperti file ini.
  *
  * ============================================================================
  */
@@ -371,7 +378,7 @@ public class Auto12_SubsistemMekanisme extends LinearOpMode {
  *    b. Ukur metode 2. Lebih cepat? (Ingat pelajaran Auto09 soal
  *       tugas konkuren)
  *
- *  TANTANGAN — proyek akhir seri
+ *  TANTANGAN — proyek penutup arc pertama
  *    a. Ganti MENUJU_OBJEK dan MENUJU_TARGET di metode 2 supaya
  *       pakai pergiKeTitik() dari Auto08_Navigasi (butuh bawa
  *       hardware odometri + fungsi perbaruiPosisi() ke file ini juga)
@@ -380,7 +387,7 @@ public class Auto12_SubsistemMekanisme extends LinearOpMode {
  *       COBA LAGI (kembali ke MENUJU_OBJEK) alih-alih langsung
  *       menyerah — batasi percobaan ulang maksimal 2x biar nggak
  *       nyangkut selamanya kalau memang nggak ada objek yang benar
- *    c. Ini proyek akhir yang realistis: robot yang menavigasi pakai
+ *    c. Ini proyek penutup arc pertama yang realistis: robot yang menavigasi pakai
  *       koordinat (Auto08), mengambil objek berdasar sensor (Auto10/
  *       11), memverifikasi sebelum bertindak (Auto11), dan mengatur
  *       semuanya lewat mesin keadaan non-blocking (Auto09) — persis

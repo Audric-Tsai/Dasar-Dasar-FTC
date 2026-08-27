@@ -49,6 +49,11 @@ import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
  *                                 (beberapa cm — sensor ini bukan
  *                                 buat jarak jauh)
  *
+ *   LANJUT KE: Auto12_SubsistemMekanisme — drivetrain (Auto01),
+ *   servo (Auto06), mesin keadaan (Auto09), sensor jarak (Auto10),
+ *   dan sensor warna (file ini) digabung jadi satu robot ambil-dan-
+ *   taruh yang sungguhan.
+ *
  * ============================================================================
  */
 

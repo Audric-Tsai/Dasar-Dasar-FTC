@@ -49,6 +49,11 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
  *   ROBOT INI PAKAI:
  *     left_drive, right_drive, imu -> sama seperti Auto01-04
  *
+ *   LANJUT KE: Auto06_Servo — ini file terakhir yang cuma soal
+ *   drivetrain buat sementara. Auto06 pindah ke aktuator yang SAMA
+ *   SEKALI beda cara kerjanya: servo, yang nggak punya encoder sama
+ *   sekali.
+ *
  * ============================================================================
  */
 

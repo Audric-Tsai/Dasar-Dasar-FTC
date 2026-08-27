@@ -33,6 +33,10 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
  *     right_drive  -> Control Hub motor 1, REV HD Hex 20:1
  *     imu          -> sudah ada di dalam Control Hub
  *
+ *   LANJUT KE: Auto02_Belok — begitu jalan lurus bisa diandalkan,
+ *   langkah alami berikutnya adalah muter ke arah tertentu. Angka-
+ *   angka motor/roda di file ini dipakai ulang di sana.
+ *
  * ============================================================================
  */
 

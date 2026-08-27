@@ -38,6 +38,11 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
  *     left_drive, right_drive -> lewat Drivetrain.java
  *     servo_lengan             -> lewat Capit.java
  *
+ *   LANJUT KE: Auto16_PilihRute — satu masalah praktis terakhir:
+ *   pola "PILIH METODE DI SINI" yang dipakai di SEMUA file Auto0N
+ *   (termasuk file ini) masih butuh build ulang buat ganti perilaku.
+ *   Auto16 membenahi itu buat hari pertandingan.
+ *
  * ============================================================================
  */
 

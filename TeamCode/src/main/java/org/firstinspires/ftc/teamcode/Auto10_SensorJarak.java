@@ -49,6 +49,10 @@ import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
  *     left_drive, right_drive -> sama Auto01
  *     sensor_jarak             -> distance sensor, menghadap ke DEPAN
  *
+ *   LANJUT KE: Auto11_SensorWarna — masalah yang sama (bacaan sensor
+ *   dipengaruhi kondisi di luar objeknya sendiri) muncul lagi, kali
+ *   ini di sensor warna, dengan solusi yang beda bentuknya.
+ *
  * ============================================================================
  */
 

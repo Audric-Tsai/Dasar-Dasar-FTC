@@ -32,6 +32,10 @@ import com.qualcomm.robotcore.util.ElapsedTime;
  *   dibikin paling sederhana (kayak Auto02 metode 1) supaya nggak
  *   mengalihkan perhatian dari inti pelajaran.
  *
+ *   LANJUT KE: Auto10_SensorJarak — pola non-blocking di file ini
+ *   berguna buat APA PUN yang perlu terus-menerus DICEK tiap loop,
+ *   termasuk pembacaan sensor. Auto10 kasih sensor pertamanya.
+ *
  * ============================================================================
  */
 

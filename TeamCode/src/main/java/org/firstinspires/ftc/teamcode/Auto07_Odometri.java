@@ -46,6 +46,10 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
  *   Jangan lompat ke metode 4. Coba metode 2 dulu, dorong robotnya
  *   sambil diputar, dan lihat sendiri kenapa itu meleset.
  *
+ *   LANJUT KE: Auto08_Navigasi — begitu robot tahu (X, Y, heading)
+ *   sendiri secara terus-menerus, dia bisa dikasih KOORDINAT TARGET
+ *   langsung, bukan cuma perintah relatif "maju sekian, belok sekian".
+ *
  * ============================================================================
  */
 

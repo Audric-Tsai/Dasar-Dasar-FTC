@@ -41,6 +41,10 @@ import com.qualcomm.robotcore.hardware.Servo;
  *   File ini BUKAN bagian dari drivetrain — sengaja berdiri sendiri
  *   supaya bisa dites di meja tanpa nyalain motor kiri/kanan dulu.
  *
+ *   LANJUT KE: Auto07_Odometri — balik lagi ke drivetrain, tapi
+ *   dengan pertanyaan baru: bukan "gerak ke mana", tapi "robotnya
+ *   tahu nggak dia sekarang ada di mana".
+ *
  * ============================================================================
  */
 

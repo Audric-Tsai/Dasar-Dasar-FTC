@@ -35,6 +35,18 @@ import com.qualcomm.robotcore.util.Range;
  *                                 pelajaran ini di menu-nya, bukan di
  *                                 presisi gerakannya
  *
+ *   DI SINI SERI Auto0N BERHENTI (untuk sekarang):
+ *   Arc 1 (Auto01-12) = apa saja yang bisa dilakukan robot secara
+ *   fisik. Arc 2 (Auto13-16) = cara nulis, tuning, dan mengatur kode
+ *   itu supaya nggak berantakan waktu robotnya makin rumit. Kalau
+ *   mau lanjut sendiri dari sini, arah yang belum dibahas: motion
+ *   profiling (percepatan halus, bukan cuma melambat proporsional),
+ *   PID+feedforward (buat lengan/lift yang melawan gravitasi),
+ *   TeleOp field-centric (pakai IMU buat kontrol manual yang selalu
+ *   relatif ke lapangan, bukan ke arah hadap robot), dan vision
+ *   sederhana (deteksi warna dari kamera, bukan cuma sensor kontak
+ *   dekat).
+ *
  * ============================================================================
  */
 

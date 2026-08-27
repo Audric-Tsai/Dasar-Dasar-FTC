@@ -39,6 +39,11 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
  *   ROBOT INI PAKAI:
  *     left_drive, right_drive, imu -> sama seperti Auto01 & Auto02
  *
+ *   LANJUT KE: Auto04_PID — jalanLurus() dan belok() di file ini
+ *   diam-diam sudah pakai kontrol proporsional (huruf P dari PID)
+ *   tanpa pernah dikasih nama. Auto04 kasih nama itu, dan
+ *   menyelesaikan masalah yang belum kelihatan di sini.
+ *
  * ============================================================================
  */
 

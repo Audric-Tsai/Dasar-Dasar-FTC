@@ -8,7 +8,7 @@ import com.qualcomm.robotcore.util.Range;
 
 /**
  * ============================================================================
- *   DRIVETRAIN — Bagian dari pelajaran Auto15_ArsitekturSubsistem
+ *   DRIVETRAIN (PENGGERAK RODA/MOTOR) — Bagian dari pelajaran Auto15_ArsitekturSubsistem
  * ============================================================================
  *
  *   Baca Auto15_ArsitekturSubsistem.java DULU buat penjelasan lengkap

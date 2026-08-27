@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.hardware.Servo;
 
 /**
  * ============================================================================
- *   CAPIT — Bagian dari pelajaran Auto15_ArsitekturSubsistem
+ *   CAPIT (CLAW / GRIPPER) — Bagian dari pelajaran Auto15_ArsitekturSubsistem
  * ============================================================================
  *
  *   Subsistem KEDUA, sengaja dibikin SEKECIL mungkin supaya polanya

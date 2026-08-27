@@ -56,6 +56,16 @@ import static org.junit.Assert.assertTrue;
  *   hitungan detik — jauh lebih cepat (dan jauh lebih aman) daripada
  *   nemuin itu waktu robot beneran nyelonong ke arah yang salah.
  *
+ *   DI SINI SERI Auto0N BERHENTI (untuk sekarang):
+ *   Tiga arc: Arc 1 (Auto01-12) apa saja yang bisa dilakukan robot
+ *   secara fisik, Arc 2 (Auto13-16) cara nulis/tuning/mengatur
+ *   kodenya, Arc 3 (Auto17-20) menghaluskan gerakan DAN memastikan
+ *   matematikanya benar sebelum dipercaya ke robot. Arah yang belum
+ *   dibahas kalau mau lanjut sendiri: TeleOp field-centric, vision
+ *   (color-blob maupun AprilTag), odometri 3 roda, dan gabungan
+ *   feedforward profil-gerak + PIDF sekaligus (disinggung di
+ *   TANTANGAN Auto19_PIDF).
+ *
  * ============================================================================
  */
 public class Auto20_UnitTesting {

@@ -46,11 +46,16 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
  *     encoder_maju, encoder_geser     -> dead wheel pod, sama Auto07/08
  *     imu                             -> sama semua file sebelumnya
  *
+ *   LANJUT KE: Auto19_PIDF — lepas dari drivetrain buat sementara.
+ *   Auto17 dan file ini berdua soal MENGHALUSKAN gerakan drivetrain;
+ *   Auto19 pindah ke mekanisme yang beda total (lengan) dengan
+ *   masalah yang beda total juga (gravitasi, bukan jarak/arah).
+ *
  * ============================================================================
  */
 
 @Autonomous(name = "Auto Lintasan Mulus (Belajar)", group = "Belajar")
-public class Auto19_LintasanMulus extends LinearOpMode {
+public class Auto18_LintasanMulus extends LinearOpMode {
 
     // ========================================================================
     //   BAGIAN 1 — ANGKA-ANGKA PENTING

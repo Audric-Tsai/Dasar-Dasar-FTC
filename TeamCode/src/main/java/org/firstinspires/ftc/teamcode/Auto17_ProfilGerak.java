@@ -53,6 +53,11 @@ import com.qualcomm.robotcore.util.Range;
  *     (nggak ada belok di file ini — fokusnya di BENTUK kecepatan,
  *     bukan arah)
  *
+ *   LANJUT KE: Auto18_LintasanMulus — konsep "kecepatan jelajah
+ *   tetap, nggak usah melambat" dari metode 2/3 di file ini dipakai
+ *   lagi di sana, buat titik ANTARA di sebuah lintasan (yang PUNYA
+ *   arah/belokan, beda dari file ini yang sengaja lurus doang).
+ *
  * ============================================================================
  */
 
@@ -241,7 +246,7 @@ public class Auto17_ProfilGerak extends LinearOpMode {
      * INI POLA YANG SAMA DIPAKAI ROBOT PROFESIONAL:
      *   feedforward (dari MODEL/rencana) menangani SEBAGIAN BESAR
      *   pekerjaan, feedback/PID (dari SENSOR) cuma membetulkan sisa
-     *   kesalahan kecil. Auto18 nanti kasih nama resmi buat pola ini
+     *   kesalahan kecil. Auto19_PIDF nanti kasih nama resmi buat pola ini
      *   — "F" di PIDF — dan menerapkannya di konteks yang beda
      *   (lengan melawan gravitasi, bukan jarak lurus).
      *

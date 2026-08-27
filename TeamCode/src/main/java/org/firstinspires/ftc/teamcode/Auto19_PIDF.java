@@ -43,11 +43,16 @@ import com.qualcomm.robotcore.util.Range;
  *     motor_lengan -> DcMotor + encoder, lengan berputar di bidang
  *                     tegak (naik-turun), sudut 0 = mendatar
  *
+ *   LANJUT KE: Auto20_UnitTesting — penutup Arc 3. Rumus-rumus pure
+ *   math dari Auto01-19 (termasuk profil trapesium Auto17) dites di
+ *   sana TANPA robot sama sekali — beda total dari semua file
+ *   sebelumnya, termasuk file ini.
+ *
  * ============================================================================
  */
 
 @Autonomous(name = "Auto PIDF (Belajar)", group = "Belajar")
-public class Auto18_PIDF extends LinearOpMode {
+public class Auto19_PIDF extends LinearOpMode {
 
     // ========================================================================
     //   BAGIAN 1 — ANGKA-ANGKA PENTING

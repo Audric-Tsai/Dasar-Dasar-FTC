@@ -12,7 +12,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 
 /**
  * ============================================================================
- *   AUTO KE TITIK — Menggabungkan SEMUA Pelajaran Jadi "Pergi ke (X, Y)"
+ *   AUTO NAVIGASI — Menggabungkan SEMUA Pelajaran Jadi "Pergi ke (X, Y)"
  * ============================================================================
  *
  *   Ini pelajaran paling "besar" di seri Auto0N sejauh ini. Nggak ada
@@ -117,8 +117,8 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
  * ============================================================================
  */
 
-@Autonomous(name = "Auto Ke Titik (Belajar)", group = "Belajar")
-public class Auto08_KeTitik extends LinearOpMode {
+@Autonomous(name = "Auto Navigasi (Belajar)", group = "Belajar")
+public class Auto08_Navigasi extends LinearOpMode {
 
     // ========================================================================
     //   BAGIAN 1 — ANGKA-ANGKA PENTING

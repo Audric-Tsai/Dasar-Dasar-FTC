@@ -27,4 +27,5 @@ android {
 dependencies {
     implementation project(':FtcRobotController')
     implementation 'com.acmerobotics.dashboard:dashboard:0.4.16'
+    testImplementation 'junit:junit:4.13.2'
 }
